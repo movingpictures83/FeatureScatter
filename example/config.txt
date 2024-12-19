@@ -1,0 +1,2 @@
+Prefix plugins/FeatureScatter/example/
+Plugin FeatureScatter inputfile parameters.featureplot1.txt outputfile featureplot1.pdf
