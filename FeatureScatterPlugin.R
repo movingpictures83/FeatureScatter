@@ -22,6 +22,8 @@ output <- function(outputfile) {
     pbmc <- readRDS(paste(pfix, parameters["rdsfile", 2], sep="/"))
     feat1 <- parameters["feature1", 2]
     feat2 <- parameters["feature2", 2]
+
+    write.csv(pbmc@assays$RNA@data@i, paste(outputfile, "csv", sep="."))
     FeatureScatter(pbmc, feature1 = feat1, feature2 = feat2)
 }
 
